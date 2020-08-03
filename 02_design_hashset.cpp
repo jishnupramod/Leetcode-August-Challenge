@@ -27,6 +27,7 @@ Please do not use the built-in HashSet library.
 */
 
 
+// Using Vector --> High space requirement
 class MyHashSet {
 public:
     /** Initialize your data structure here. */
@@ -47,6 +48,61 @@ public:
     /** Returns true if this set contains the specified element */
     bool contains(int key) {
         return hashSet[key];
+    }
+};
+
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * MyHashSet* obj = new MyHashSet();
+ * obj->add(key);
+ * obj->remove(key);
+ * bool param_3 = obj->contains(key);
+ */
+
+
+ // Using Chained Hashing --> More Time complex
+class MyHashSet {
+public:
+    /** Initialize your data structure here. */
+    const int max = 1000;
+    vector<vector<pair<int, bool>>> hash;
+    MyHashSet() {
+        hash.resize(max);
+    }
+    
+    void add(int key) {
+        int index = key % max, i;
+        for (i=0; i<hash[index].size(); ++i) {
+            if (hash[index][i].first == key) {
+                hash[index][i].second = true;
+                break;
+            }
+        }
+        if (i == hash[index].size())
+            hash[index].push_back(make_pair(key, true));
+    }
+    
+    void remove(int key) {
+        int index = key % max;
+        for (int i=0; i<hash[index].size(); ++i) {
+            if (hash[index][i].first == key) {
+                hash[index][i].second = false;
+                break;
+            }
+        }
+    }
+    
+    /** Returns true if this set contains the specified element */
+    bool contains(int key) {
+        int index = key % max;
+        bool res = false;
+        for (pair<int, bool> p : hash[index]) {
+            if (p.first == key) {
+                res = p.second;
+                break;
+            }
+        }
+        return res;
     }
 };
 
