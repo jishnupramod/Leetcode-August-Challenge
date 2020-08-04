@@ -7,3 +7,4 @@
 * 01) Detect Capital  
 * 02) Design HashSet 
 * 03) Valid Palindrome
+* 04) Power of Four
