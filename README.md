@@ -9,3 +9,4 @@
 * 03) Valid Palindrome
 * 04) Power of Four
 * 05) Add and Search Word - Data Structure Design
+* 06) Find All Duplicates in an Array
