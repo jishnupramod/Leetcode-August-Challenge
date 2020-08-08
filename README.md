@@ -10,3 +10,4 @@
 * 04) Power of Four
 * 05) Add and Search Word - Data Structure Design
 * 06) Find All Duplicates in an Array
+* 07) Vertical Order Traversal of a Binary Tree  
