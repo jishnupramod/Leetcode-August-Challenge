@@ -15,3 +15,5 @@
 * 09) Rotting Oranges
 * 10) Excel Sheet Column Number
 * 11) H-Index
+* 12) Pascal's Triangle II
+
