@@ -24,3 +24,4 @@
 * 18) < >
 * 19) Goat Latin
 * 20) Reorder List
+* 21) Sort Array By Parity
