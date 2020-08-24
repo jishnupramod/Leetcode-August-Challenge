@@ -24,4 +24,6 @@
 * 18) < >
 * 19) Goat Latin
 * 20) Reorder List
-* 21) Sort Array By Parity
+* 21) Sort Array By Parit
+* 22) < >
+* 23) Stream of Characters
