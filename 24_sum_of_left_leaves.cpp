@@ -45,3 +45,17 @@ public:
         return sum;
     }
 };
+
+
+
+// Fancy version with 3 lines
+class Solution {
+public:
+    int sumOfLeftLeaves(TreeNode* root, bool left=false) {
+        if (!root) return 0;
+        if (!root->left and !root->right) return left ? root->val : 0;
+        return sumOfLeftLeaves(root->left, true) + sumOfLeftLeaves(root->right, false);
+    }
+};
+
+
