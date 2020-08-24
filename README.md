@@ -26,4 +26,5 @@
 * 20) Reorder List
 * 21) Sort Array By Parit
 * 22) < >
-* 23) Stream of Characters
+* 23) Stream of Character
+* 24) Sum of Left Leaves
