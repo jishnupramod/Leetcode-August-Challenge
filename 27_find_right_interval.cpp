@@ -74,3 +74,20 @@ public:
         return ans;
     }
 };
+
+
+// Elegant and concise solution
+class Solution {
+public:
+    vector<int> findRightInterval(vector<vector<int>>& intervals) {
+        map<int, int> mp;
+        for (int i=0; i<intervals.size(); ++i)
+            mp[intervals[i][0]] = i;
+        vector<int> ans;
+        for (vector<int> i : intervals) {
+            auto it = mp.lower_bound(i.back());
+            it == mp.end() ? ans.push_back(-1) : ans.push_back(it->second);
+        }
+        return ans;
+    }
+};
