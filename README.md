@@ -31,3 +31,4 @@
 * 25) Minimum Cost For Ticket
 * 26) FizzBuz
 * 27) Find Right Interval
+* 28) Implement Rand10() Using Rand7()
