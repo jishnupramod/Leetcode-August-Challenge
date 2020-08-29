@@ -32,3 +32,4 @@
 * 26) FizzBuz
 * 27) Find Right Interval
 * 28) Implement Rand10() Using Rand7()
+* 29) Pancake Sorting
