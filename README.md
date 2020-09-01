@@ -33,3 +33,5 @@
 * 27) Find Right Interval
 * 28) Implement Rand10() Using Rand7()
 * 29) Pancake Sorting
+* 30) < >
+* 31) Delete Node in a BST
